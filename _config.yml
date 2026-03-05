@@ -1,80 +1,26 @@
-# -----------------------------------------------------------------------------
-# Site settings
-# -----------------------------------------------------------------------------
-# The URL of your site (e.g. https://username.github.io)
 url: "https://hakiimj.github.io"
-# The subpath of your site (e.g. /blog). Leave empty if not used.
 baseurl: ""
-
-# Title of your site (appears in the tab)
 title: Hakiim Jamaluddin
-
-# Your email (appears in the footer and contact sections)
 email: ahmadhakiim@upm.edu.my
-
-# Description used for SEO and search results
-description: Senior Lecturer in Statistics & Data Science at Universiti Putra Malaysia. PhD from UNSW Sydney.
-
-# The language of your site
+description: Senior Lecturer in Statistics & Data Science
 lang: en
-
-# -----------------------------------------------------------------------------
-# User details (Use these to populate the header/footer automatically)
-# -----------------------------------------------------------------------------
 first_name: Hakiim
 last_name: Jamaluddin
-
-# This text appears in the footer of every page
 footer_text: >
-  Senior Lecturer in Statistics & Data Science. <br>
-  Universiti Putra Malaysia (UPM) & UNSW Sydney Alumnus.
-
-# -----------------------------------------------------------------------------
-# Social integration
-# -----------------------------------------------------------------------------
-# These will create icons in your footer and on the About page.
-# I extracted these from your previous config.
+  Senior Lecturer in Statistics & Data Science. UPM & UNSW Alumni.
 github_username: HakiimJ
 linkedin_username: hakiim-j
-x_username: hakiimj_             # Twitter/X handle
+x_username: hakiimj_
 google_scholar_id: F8M1UL8AAAAJ
 orcid_id: 0000-0002-1715-6912
 research_gate_profile: Ahmad-Hakiim-Jamaluddin
-
-# Optional: Add others if you have them, otherwise leave commented out
-# mastodon_username:
-# medium_username:
-# quora_username:
-# semantic_scholar_id:
-
-# -----------------------------------------------------------------------------
-# Analytics
-# -----------------------------------------------------------------------------
-# Google Analytics 4 (GA4) - You likely need to generate a new ID (starts with G-)
-# because your old UA- ID is obsolete.
-google_analytics: # G-XXXXXXXXXX 
-cronitor_analytics: 
-
-# -----------------------------------------------------------------------------
-# Theme settings
-# -----------------------------------------------------------------------------
-# "system" = Automatically detects if the user's computer is in Dark Mode
-# and provides the toggle button (Sun/Moon icon)
-theme: system 
-
-# -----------------------------------------------------------------------------
-# Jekyll Settings (Technical stuff - usually don't need to touch these)
-# -----------------------------------------------------------------------------
-# Build settings
+theme: system
 markdown: kramdown
 highlighter: rouge
 permalink: /blog/:year/:title/
-
-# Pagination
 paginate: 10
 paginate_path: /blog/page:num/
-
-# Plugins
+timezone: Asia/Kuala_Lumpur
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -83,8 +29,6 @@ plugins:
   - jekyll-email-protect
   - jekyll-twitter-plugin
   - jemoji
-
-# Exclude these files from the build
 exclude:
   - .sass-cache
   - .jekyll-cache
@@ -105,23 +49,8 @@ exclude:
   - .gitignore
   - .github
   - .git
-
-# -----------------------------------------------------------------------------
-# Other Features
-# -----------------------------------------------------------------------------
-# Show the "News" section on the homepage?
 news_limit: 5
-
-# Show the "Selected Publications" on the homepage?
 latest_papers_limit: 3
-
-# Display related posts at the bottom of blog posts?
 related_blog_posts:
   enabled: true
   max_related: 3
-
-# -----------------------------------------------------------------------------
-# Timezone
-# -----------------------------------------------------------------------------
-# Setting this to Malaysia time ensures your posts/news show up correctly
-timezone: Asia/Kuala_Lumpur
