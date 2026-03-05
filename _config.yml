@@ -49,6 +49,8 @@ exclude:
   - .gitignore
   - .github
   - .git
+  - _news            <-- Add this
+  - _bibliography    <-- Add this
 news_limit: 5
 latest_papers_limit: 3
 related_blog_posts:
